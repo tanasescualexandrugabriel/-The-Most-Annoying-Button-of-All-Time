@@ -48,7 +48,7 @@ The main game logic:
 1. **Download the ZIP** of this repository (on GitHub: the green **Code** button → **Download ZIP**).
 2. **Unzip it** anywhere on your computer:
    - **Windows:** right-click the downloaded `.zip` file → *Extract All...* → choose a folder → *Extract*.
-   - **macOS:** double-click the `.zip` file — it extracts to the same folder automatically.
+   - **macOS:** double-click the `.zip` file it extracts to the same folder automatically.
    - **Linux:** right-click → *Extract Here*, or from a terminal:
      ```bash
      unzip the-most-annoying-button-of-all-time.zip
