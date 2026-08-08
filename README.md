@@ -59,7 +59,7 @@ The main game logic:
      ```bash
      code .
      ```
-   - Any other editor works too (Sublime Text, WebStorm, Notepad++, etc.) — just open the folder.
+   - Any other editor works too (Sublime Text, WebStorm, Notepad++, etc.) - just open the folder.
 
 ## How to run it
 
