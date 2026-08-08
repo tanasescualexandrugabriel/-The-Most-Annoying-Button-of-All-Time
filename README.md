@@ -1,6 +1,6 @@
 # The Most Annoying Button of All Time
 
-A small joke web game: a "Click for 1M$" button that dodges your cursor (and your finger, on mobile) every time you get close to it. It looks completely unbeatable with a mouse or a touchscreen — but there's exactly one way to actually win.
+A small joke web game: a "Click for 1M$" button that dodges your cursor (and your finger, on mobile) every time you get close to it. It looks completely unbeatable with a mouse or a touchscreen but there's exactly one way to actually win.
 
 Built with plain HTML, CSS and JavaScript, plus Bootstrap 5, Animate.css and canvas-confetti loaded from a CDN.
 
@@ -33,8 +33,8 @@ All the visual styling:
 
 ### `utils.js`
 Two small helper functions used by `script.js`:
-- `calculeazaPozitieNoua(latimeButon, inaltimeButon, margine)` — picks a random on-screen position for the button that always stays fully inside the visible viewport, with a safety margin so it never spawns half off-screen.
-- `obtineEvolutieButon(scor)` — returns a new text and Bootstrap color class for the button once the missed-attempts count hits certain thresholds (5, 12, 20, 35). Returns `null` when there's no upgrade at the current score.
+- `calculeazaPozitieNoua(latimeButon, inaltimeButon, margine)` - picks a random on-screen position for the button that always stays fully inside the visible viewport, with a safety margin so it never spawns half off-screen.
+- `obtineEvolutieButon(scor)` - returns a new text and Bootstrap color class for the button once the missed-attempts count hits certain thresholds (5, 12, 20, 35). Returns `null` when there's no upgrade at the current score.
 
 ### `script.js`
 The main game logic:
@@ -80,4 +80,4 @@ No installation, build tools, or dependencies are required — everything else (
 
 ## Tip for testers
 
-If you can't catch the button with your mouse (you won't), try pressing `Tab` a few times and watching for the yellow focus ring — then hit `Enter`.
+If you can't catch the button with your mouse (you won't), try pressing `Tab` a few times and watching for the yellow focus ring then hit `Enter`.
