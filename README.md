@@ -28,7 +28,7 @@ All the visual styling:
 - An animated diagonal gradient background.
 - `.game-wrapper` uses `pointer-events: none` so the background never blocks clicks, while `#game-ui` and `#success-alert` re-enable pointer events for the text and buttons that need to be interactive.
 - The glowing title style, the counter pill style, and the button's base look and position.
-- `#crazy-btn:focus-visible` — the yellow outline that appears only when the button is reached via keyboard. This is not just decoration: it's the only clue you get for where the button is when you're using `Tab` instead of a mouse, which is what makes the keyboard win path actually playable.
+- `#crazy-btn:focus-visible` - the yellow outline that appears only when the button is reached via keyboard. This is not just decoration: it's the only clue you get for where the button is when you're using `Tab` instead of a mouse, which is what makes the keyboard win path actually playable.
 - The `flash-white` and `quake-effect` keyframe animations used for the "evolution" taunts and the win moment.
 
 ### `utils.js`
@@ -41,7 +41,7 @@ The main game logic:
 - Grabs references to all the DOM elements it needs by `id`.
 - `fugiDeCursor()` — runs on both `mouseover` and `touchstart`. Increments the score, asks `utils.js` for a new safe position, moves the button there, plays the wobble animation, and applies a button "evolution" if the score just crossed a threshold. Both mouse and touch are wired to this function so the game is equally hard to win on desktop and mobile.
 - The `click` listener on the button — this only fires when a click reaches the button without a prior `mouseover`/`touchstart`, which in practice means it was triggered from the keyboard. This is the win condition: it hides the game UI, shows the success alert, fires the confetti, and fills in how many attempts it took.
-- `reseteazaJocul()` — resets the score, button text/class/position and UI visibility back to the starting state. It's wired to the "Play again" button and also exposed on `window` in case you want to trigger it from an inline `onclick` instead.
+- `reseteazaJocul()` - resets the score, button text/class/position and UI visibility back to the starting state. It's wired to the "Play again" button and also exposed on `window` in case you want to trigger it from an inline `onclick` instead.
 
 ## How to download and open the project
 
@@ -76,7 +76,7 @@ Double-click `index.html`, or right-click it and choose *Open with* → your bro
   ```
   then open `http://localhost:8000` in your browser.
 
-No installation, build tools, or dependencies are required — everything else (Bootstrap, fonts, Animate.css, confetti) loads from a CDN when the page opens, so you'll need an internet connection the first time you run it.
+No installation, build tools, or dependencies are required everything else (Bootstrap, fonts, Animate.css, confetti) loads from a CDN when the page opens, so you'll need an internet connection the first time you run it.
 
 ## Tip for testers
 
